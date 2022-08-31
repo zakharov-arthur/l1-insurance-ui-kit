@@ -1,0 +1,70 @@
+{
+  "version": "0.0.1",
+  "name": "@zakharov-arthur/l1-insurance-ui-kit",
+  "description": "UI-Kit for l1-insurance ",
+  "author": {
+    "name": "arthurzakharov",
+    "email": "zakharov.arthur@icloud.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zakharov-arthur/l1-insurance-ui-kit"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/zakharov-arthur"
+  },
+  "license": "ISC",
+  "scripts": {
+    "rollup": "rollup -c",
+    "editorconfig": "editorconfig-checker",
+    "pretty": "prettier --write \"src/**/*.{json,scss,js,jsx,ts,tsx}\"",
+    "clean": "rimraf dist",
+    "clean:all": "rimraf dist node_modules package-lock.json coverage"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "8.3.3",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "editorconfig-checker": "^4.0.2",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.78.1",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-filesize": "^9.1.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.54.6",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2",
+    "webpack": "^5.74.0"
+  },
+  "peerDependencies": {
+    "classnames": "^2.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
+}
